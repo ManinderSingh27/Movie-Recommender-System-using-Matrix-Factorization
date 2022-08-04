@@ -40,7 +40,7 @@ def rank_top_k(names, ratings):
     np.array([1, 3, 6])
     """
 
-ranked_ids = np.argsort(ratings)
+    ranked_ids = np.argsort(ratings)
     return names[ranked_ids], ratings[ranked_ids]
 
 def convert(data, nb_users, nb_movies):
