@@ -30,16 +30,6 @@ def rearrange(items, ratings):
     return attribute, scores
 
 def rank_top_k(names, ratings):
-    """
-    Example:
-    a, b = np.array(['a', 'b', 'c']), np.array([6, 1, 3])
-    a, b = rearrange(a, b)
-    >>> a
-    np.array('b', 'c', 'a')
-    >>> b
-    np.array([1, 3, 6])
-    """
-
     ranked_ids = np.argsort(ratings)
     return names[ranked_ids], ratings[ranked_ids]
 
